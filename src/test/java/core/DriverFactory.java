@@ -31,7 +31,7 @@ public class DriverFactory {
                 break;
 
             default:
-                WebDriverManager.chromedriver().setup();
+                WebDriverManager.chromedriver().browserVersion("143").setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
 
                 if (headless) {
