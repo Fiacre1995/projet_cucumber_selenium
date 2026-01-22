@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.LoginPage;
 import utils.ConfigReader;
+import utils.DynamicDataFactory;
+import utils.JsonDataReader;
 
 
 public class LoginSteps {
@@ -19,12 +21,23 @@ public class LoginSteps {
 
     @When("il saisit des identifiants valides")
     public void login() {
-        loginPage.login("Admin", "admin123");
+        // Appel aux données à partir de mon fichier JSON
+        String username = JsonDataReader.get("users", "validUser", "username");
+        String password = JsonDataReader.get("users", "validUser", "password");
+
+        loginPage.login(username, password);
     }
 
     @When("il saisit un mot de passe invalide")
     public void loginInvalidPassword() {
-        loginPage.login("Admin", "admin");
+        // Appel aux données à partir de mon fichier JSON
+        String username = JsonDataReader.get("users", "passwordInvalid", "username");
+        String password = JsonDataReader.get("users", "passwordInvalid", "password");
+
+        // Utilisé les données dynamics
+        String passwordFaker = DynamicDataFactory.randomPassword();
+
+        loginPage.login(username, passwordFaker);
     }
 
     @Then("il est connecté avec succès")

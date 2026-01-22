@@ -1,9 +1,14 @@
 steps\LoginSteps.class
+api\UserApi.class
 pages\LoginPage.class
 core\BasePage.class
 runners\TestRunner.class
-utils\ScreenshotUtils.class
 utils\ConfigReader.class
 core\DriverFactory.class
-hooks\Hooks.class
+context\TestContext.class
 utils\WaitUtils.class
+utils\JsonDataReader.class
+utils\DynamicDataFactory.class
+utils\ApiClient.class
+utils\ScreenshotUtils.class
+hooks\Hooks.class

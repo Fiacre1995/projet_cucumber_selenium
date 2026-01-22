@@ -1,9 +1,14 @@
+C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\api\UserApi.java
+C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\context\TestContext.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\core\BasePage.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\core\DriverFactory.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\hooks\Hooks.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\pages\LoginPage.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\runners\TestRunner.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\steps\LoginSteps.java
+C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\utils\ApiClient.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\utils\ConfigReader.java
+C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\utils\DynamicDataFactory.java
+C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\utils\JsonDataReader.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\utils\ScreenshotUtils.java
 C:\Mes Projets\SELENIUM\selenium-framework\src\test\java\utils\WaitUtils.java
