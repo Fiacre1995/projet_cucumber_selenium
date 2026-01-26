@@ -16,5 +16,5 @@ allure generate --output target/allure-report target/allure-results
 # Ouvrir le rapport avec allure report (Mode headless)
 allure open target/allure-report
 
-# Utiliser les webhook pour prendre push en compte avec Webhook
+# Utiliser les webhook pour prendre push en compte avec Webhook valide
 cloudflared tunnel --url http://localhost:8080
