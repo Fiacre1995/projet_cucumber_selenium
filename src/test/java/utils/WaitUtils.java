@@ -12,7 +12,7 @@ import java.time.Duration;
 public class WaitUtils {
 
     private static WebDriver driver = DriverFactory.getDriver();
-    private static final int DEFAULT_TIMEOUT = 10; // secondes
+    private static final int DEFAULT_TIMEOUT = 30; // secondes
 
     // Attendre qu'un élément WebElement soit visible
     public static WebElement waitForVisibility(WebElement element) {

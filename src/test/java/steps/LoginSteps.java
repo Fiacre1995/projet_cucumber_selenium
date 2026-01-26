@@ -8,6 +8,7 @@ import pages.LoginPage;
 import utils.ConfigReader;
 import utils.DynamicDataFactory;
 import utils.JsonDataReader;
+import utils.WaitUtils;
 
 
 public class LoginSteps {
@@ -42,6 +43,7 @@ public class LoginSteps {
 
     @Then("il est connecté avec succès")
     public void verifyLogin() {
+
         WebDriver driver = DriverFactory.getDriver();
         String expectedUrl = ConfigReader.get("dashbordUrl");
         String actualUrl = driver.getCurrentUrl();
